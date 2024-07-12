@@ -1,4 +1,4 @@
-package com.example.first_android_app
+package com.example.firstappandroid
 
 import org.junit.Test
 

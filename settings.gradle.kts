@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "first_android_app"
+rootProject.name = "FirstAppAndroid"
 include(":app")
+ 
