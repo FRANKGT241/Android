@@ -13,8 +13,8 @@ class SegundaActivity2 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_segunda2)
 
-        val txtNombre: TextView=findViewById(R.id.txtNombre)
-        val nombre=intent.getStringExtra("nombre")//leer el nombre mediante una variable
-        txtNombre.text=nombre
+        val txtNombre: TextView = findViewById(R.id.txtNombre)
+        val name = intent.getStringExtra("Nombre") // Leer el nombre mediante la clave correcta
+        txtNombre.text = name
     }
 }
