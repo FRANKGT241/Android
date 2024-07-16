@@ -27,42 +27,19 @@ class MainActivity : AppCompatActivity() {
 
         buttonEnviar.setOnClickListener {
             val name = editnombre.text.toString()
+            val lastname = editapellido.text.toString()
+            val phone = edittelefono.text.toString()
+            val age = editedad.text.toString()
+            val mail = editcorreo.text.toString()
+
             val intent = Intent(this, SegundaActivity2::class.java)
             intent.putExtra("Nombre", name)
+            intent.putExtra("Apellido", lastname)
+            intent.putExtra("Telefono", phone)
+            intent.putExtra("Edad", age)
+            intent.putExtra("Correo", mail)
             startActivity(intent)
             Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
-        }
-
-        buttonEnviar.setOnClickListener {
-            val name = editapellido.text.toString()
-            val intent = Intent(this, SegundaActivity2::class.java)
-            intent.putExtra("Apellido", name)
-            startActivity(intent)
-            //Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
-        }
-
-        buttonEnviar.setOnClickListener {
-            val name = edittelefono.text.toString()
-            val intent = Intent(this, SegundaActivity2::class.java)
-            intent.putExtra("Telefono", name)
-            startActivity(intent)
-            //Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
-        }
-
-        buttonEnviar.setOnClickListener {
-            val name = editedad.text.toString()
-            val intent = Intent(this, SegundaActivity2::class.java)
-            intent.putExtra("Edad", name)
-            startActivity(intent)
-            //Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
-        }
-
-        buttonEnviar.setOnClickListener {
-            val name = editcorreo.text.toString()
-            val intent = Intent(this, SegundaActivity2::class.java)
-            intent.putExtra("Correo", name)
-            startActivity(intent)
-            //Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
         }
     }
 }
